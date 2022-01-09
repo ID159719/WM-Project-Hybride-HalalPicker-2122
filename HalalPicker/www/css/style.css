@@ -1,0 +1,16 @@
+@import "./maincss/index.css";
+@import "./maincss/restauranten.css";
+@import "./maincss/category.css";
+@import "./maincss/productmenu.css";
+@import "./maincss/ingredient.css";
+@import "./maincss/order.css";
+
+.navbar .title {
+  margin: 0 auto;
+}
+
+.emailIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

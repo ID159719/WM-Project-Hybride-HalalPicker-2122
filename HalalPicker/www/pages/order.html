@@ -1,0 +1,68 @@
+<div class="page" data-name="order">
+  <div class="fab-backdrop"></div>
+  <div class="fab fab-right-bottom">
+    <a href="#" class="bg-color-teal">
+      <i class="icon f7-icons if-not-md">plus</i>
+      <i class="icon f7-icons if-not-md">xmark</i>
+      <i class="icon material-icons md-only">add</i>
+      <i class="icon material-icons md-only">close</i>
+    </a>
+    <div class="fab-buttons fab-buttons-top">
+      <a class="fab-label-button bg-color-teal" href="/restauranten/"
+        ><span>
+          <i class="icon material-icons if-md">mosque</i>
+        </span>
+        <span class="fab-label">Home</span></a
+      >
+      <a class="fab-label-button bg-color-teal" href="/order/"
+        ><span> <i class="icon material-icons if-md">shopping_cart</i> </span
+        ><span class="fab-label">Order</span></a
+      >
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner bg-color-teal">
+      <div class="left">
+        <a class="link icon-only panel-open emailIcon" data-panel="left"> </a>
+      </div>
+
+      <div class="title">HalalPicker</div>
+
+      <div class="right">
+        <a
+          href="#"
+          class="link icon-only sheet-open"
+          data-sheet=".my-sheet-swipe-to-close"
+        >
+          <i class="icon f7-icons if-not-md">bookmarks</i>
+          <i class="icon material-icons if-md">bookmarks</i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="block">
+      <div class="block-title">Order</div>
+    </div>
+    <div class="block">
+      <div class="total_price__order">
+        <p>Total price: €</p>
+        <span id="price"></span>
+      </div>
+    </div>
+    <div class="list">
+      <ul id="ullist_order"></ul>
+    </div>
+    <div class="block">
+      <a
+        id="btnGetOrder"
+        onclick="confirmOrder()"
+        class="button button-raised button-fill bg-color-teal open-full"
+        href="#"
+        >Confirm</a
+      >
+    </div>
+  </div>
+</div>
