@@ -1,0 +1,99 @@
+<div class="page" data-name="register">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner bg-color-teal">
+      <div class="title">HalalPicker</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="list">
+      <ul id="ullist_register">
+        <li class="item-content item-input item-input-outline">
+          <div class="item-inner">
+            <div class="item-title item-floating-label">Username</div>
+            <div class="item-input-wrap">
+              <input
+                id="register_name"
+                type="text"
+                name="username"
+                placeholder="Your username"
+                required
+                validate
+              />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input item-input-outline">
+          <div class="item-inner">
+            <div class="item-title item-floating-label">Password</div>
+            <div class="item-input-wrap">
+              <input
+                id="register_password"
+                type="password"
+                name="password"
+                placeholder="Your password"
+                required
+                validate
+              />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input item-input-outline">
+          <div class="item-inner">
+            <div class="item-title item-floating-label">Phone</div>
+            <div class="item-input-wrap">
+              <input
+                id="register_gsm"
+                type="number"
+                name="phone"
+                placeholder="Your phone number"
+                pattern="[0-9]*"
+                data-error-message="Only numbers please!"
+                required
+                validate
+              />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input item-input-outline">
+          <div class="item-inner">
+            <div class="item-title item-floating-label">Email</div>
+            <div class="item-input-wrap">
+              <input
+                id="register_email"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+                validate
+              />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="list">
+      <ul>
+        <li>
+          <div class="block">
+            <p class="row">
+              <button
+                id="btnRegister"
+                onclick="addApiUser()"
+                @click="${showToastWithCustomButton}"
+                class="col bg-color-teal button button-large button-fill"
+                type="click"
+              >
+                Register
+              </button>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.product__images {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.media-list .item-inner,
+li.media-item .item-inner {
+  display: flex;
+  flex-flow: column;
+}
