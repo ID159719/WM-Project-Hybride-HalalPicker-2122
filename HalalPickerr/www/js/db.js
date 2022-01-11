@@ -86,9 +86,7 @@ const addApiProductOrder = async function (quantity_product, prd_id, order_id) {
   });
 
   await fetch(url, opties)
-    .then(function (response) {
-      return response;
-    })
+    .then(function (response) {})
     .then(function (responseData) {})
     .catch(function (error) {
       console.log(error);
@@ -233,15 +231,18 @@ const personalInformation = async function (cstm_username, cstm_password) {
 // Deze methode dient om alle restauranten te tonen
 const getApiRestaurants = async function () {
   let url = baseApiAddress + "RESTAURANTGET.php";
+
   opties.body = JSON.stringify({
     format: "json",
   });
+
   await fetch(url, opties)
     .then(function (response) {
       return response.json();
     })
     .then(function (responseData) {
       let list = responseData.data;
+
       let ullist_restauranten = document.getElementById("ullistrestauranten");
       if (list.length > 0) {
         for (let i = 0; i < list.length; i++) {
@@ -256,7 +257,6 @@ const getApiRestaurants = async function () {
                     <div class="item-title">
                     <div clas="item-header">${list[i].rst_name}</div>${list[i].rst_street}
                     </div>
-                    <div class="item-after">${aantal_km[i]}</div>
                   </div>
                 </a>
             </li>

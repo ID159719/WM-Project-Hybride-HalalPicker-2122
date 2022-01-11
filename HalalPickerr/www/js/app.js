@@ -129,7 +129,6 @@ $(document).on(
     initMap();
 
     await getApiRestaurants();
-
     if (toHome == 0) {
       toHome += 1;
       try {
